@@ -7,7 +7,7 @@ const socketServer = io(httpServer, { cors: {origin: '*' } });
 
 const sockets = require('./sockets');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 httpServer.listen(PORT);
 console.log(`listining on port ${PORT}...`);
 
