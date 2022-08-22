@@ -1,7 +1,8 @@
 // Canvas Related 
 const canvas = document.createElement('canvas');
 const context = canvas.getContext('2d');
-const socket = io('/pong');
+// const socket = io('/pong');
+const socket = io('https://immense-mountain-78309.herokuapp.com/pong');
 let isReferee = false;
 let paddleIndex = 0;
 
